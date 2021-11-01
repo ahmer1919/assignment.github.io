@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: gainsboro;
+            font-size: 1.4rem;
+        }
+        th{
+            background-color: #273239;
+        }
+        td{
+            background-color: goldenrod;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Scope</h1>
+
+    <p><b>carName</b> is undefined outside myFunction()1: Check out the <u>View page source</u> for seeing the function in the JavaScript code</p>
+
+    <p id="demo1">string Volvo</p>
+
+    <p id="demo2">undefined</p>
+    <p>A <b>GLOBAL</b> variable can be accessed from any script or function.</p>
+
+    <p id="demo3"> myFunction2 can display  Nano  [carName2 can be displayed by function 2 as it is declared globally]</p>
+    <p><b>Block Scope:</b>Variables declared inside a { } block cannot be accessed from outside the block:</p>
+    <p id="demo4">Inside the block it can display x as:2</p>
+    <p id="demo5">type of x is:undefined     as x cant be accessed outside block ;view page souce for seeing block code</p>
+    <hr>
+    <table>
+        <tr>
+            <th><h3>Undefined</h3></th>
+            <th><h3>Not defined</h3></th>
+        </tr>
+        <tr>
+            <td>It works like when we declared a variable in the code but did not assign the value before printing the variable value</td>
+            <td>It works like when we did not declare the variable and try to call that variable.</td>
+        </tr>
+    </table>
+    <p><b>Check out the console for seeing further differences between undefined and not defined and the script tag for the below implementation code</b> </p>
+    <script>
+        console.log(a);
+        var a = 15;
+        console.log(a);
+        console.log(b);
+      </script>
+</body>
+</html>
