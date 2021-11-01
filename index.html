@@ -42,6 +42,20 @@
             <td>It works like when we declared a variable in the code but did not assign the value before printing the variable value</td>
             <td>It works like when we did not declare the variable and try to call that variable.</td>
         </tr>
+         <tr>
+            <td>Whenever we declare a variable without assigning any value to it, javascript implicitly assigns its value as 
+                undefined. <br>
+                
+                  Example-let name;
+                  console.log(name); //undefined</td>
+                  <td>A not defined is a variable which is not declared at a given point of time with declaration keyword like var, 
+                    let or const.
+                    <br>
+                    Example-console.log(b);
+                    b = 5;
+                    //Output:- "ReferenceError: b is not defined
+                </td>
+        </tr>
     </table>
     <p><b>Check out the console for seeing further differences between undefined and not defined and the script tag for the below implementation code</b> </p>
     <script>
